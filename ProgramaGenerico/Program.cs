@@ -103,11 +103,11 @@
 
             //aqui uma forma mais compacta e rapida de inserir valores, nao precisa parenteses
             //lista double para ter casas decimais
-            List<double> Salarinho = new List<double>
+            List<decimal> Salarinho = new List<decimal>
             {
-                4589.51,
-                5514.34,
-                6521.22
+                4589.51M,
+                5514.34M,
+                6521.22M
             };
 
             Console.WriteLine("No início da carreira espera-se {0} a {1}, podendo chegar a {2}.", Salarinho[0], Salarinho[1], Salarinho[2]);
@@ -115,8 +115,8 @@
             Console.WriteLine("\nQual salario gostaria de ter? \n");
 
             //mais uma lista, dessa vez com input de valor pelo usuario
-            List<double> pedeValor = new List<double>();
-            pedeValor.Add(double.Parse(Console.ReadLine()));
+            List<decimal> pedeValor = new List<decimal>();
+            pedeValor.Add(decimal.Parse(Console.ReadLine()));
 
             Console.WriteLine($"\nO valor de {pedeValor[0]} parece digno");
 
